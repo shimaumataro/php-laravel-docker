@@ -1093,3 +1093,41 @@ could not connect to server: Connection refused
 #19 /Users/testuser/Desktop/php-laravel-docker/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #20 {main}
 "} 
+[2023-01-15 19:39:54] local.ERROR: Unable to prepare route [api/user] for serialization. Uses Closure. {"exception":"[object] (LogicException(code: 0): Unable to prepare route [api/user] for serialization. Uses Closure. at /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Routing/Route.php:917)
+[stacktrace]
+#0 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteCacheCommand.php(62): Illuminate\\Routing\\Route->prepareForSerialization()
+#1 [internal function]: Illuminate\\Foundation\\Console\\RouteCacheCommand->handle()
+#2 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#3 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#7 /Users/testuser/Desktop/php-laravel-docker/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 /Users/testuser/Desktop/php-laravel-docker/vendor/symfony/console/Application.php(1021): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/testuser/Desktop/php-laravel-docker/vendor/symfony/console/Application.php(275): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteCacheCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /Users/testuser/Desktop/php-laravel-docker/vendor/symfony/console/Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /Users/testuser/Desktop/php-laravel-docker/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
+[2023-01-15 19:51:13] local.ERROR: Unable to prepare route [api/user] for serialization. Uses Closure. {"exception":"[object] (LogicException(code: 0): Unable to prepare route [api/user] for serialization. Uses Closure. at /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Routing/Route.php:917)
+[stacktrace]
+#0 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteCacheCommand.php(62): Illuminate\\Routing\\Route->prepareForSerialization()
+#1 [internal function]: Illuminate\\Foundation\\Console\\RouteCacheCommand->handle()
+#2 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#3 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#4 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#5 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Container/Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#6 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#7 /Users/testuser/Desktop/php-laravel-docker/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#8 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#9 /Users/testuser/Desktop/php-laravel-docker/vendor/symfony/console/Application.php(1021): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/testuser/Desktop/php-laravel-docker/vendor/symfony/console/Application.php(275): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\RouteCacheCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /Users/testuser/Desktop/php-laravel-docker/vendor/symfony/console/Application.php(149): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Console/Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#13 /Users/testuser/Desktop/php-laravel-docker/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#14 /Users/testuser/Desktop/php-laravel-docker/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 {main}
+"} 
