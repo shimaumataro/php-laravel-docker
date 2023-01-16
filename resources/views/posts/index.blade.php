@@ -22,6 +22,26 @@
                     @endif
                     <p class="card-text">投稿者：{{ $post->user->name }}</p>
                     <a href="{{ route('posts.show', $post->id) }}" class="btn btn-primary">詳細へ</a>
+                    <div class="row justify-content-center">
+                    @if($post->users()->where('user_id', Auth::id())->exists())
+                    <div class="col-md-3">
+                        <form action="{{ route('unfavorites', $post) }}" method="POST">
+                            @csrf
+                            <input type="submit" value="&#xf164;いいね取り消す" class="fas btn btn-danger">
+                        </form>
+                    </div>
+                    @else
+                    <div class="col-md-3">
+                        <form action="{{ route('favorites', $post) }}" method="POST">
+                            @csrf
+                            <input type="submit" value="&#xf164;いいね" class="fas btn btn-success">
+                        </form>
+                    </div>
+                    @endif
+                </div>
+                    <div class="row justify-content-center">
+                    <p>いいね数：{{ $post->users()->count() }}</p>
+                    </div>
                 </div>
                 <div class="card-footer text-muted">
                     投稿日時：{{ $post->created_at }}
