@@ -1,3 +1,9 @@
+<style>
+    .thumbnail{
+        width:100px;
+        height:100px;
+    }
+</style>
 @extends('layouts.app')
 @section('content')
 <div class="container">
@@ -8,6 +14,9 @@
             </div>
             <div class="card-body">
                 <p class="card-text">内容：{{ $post->body }}</p>
+                @if(isset($post->image))
+                <img class="thumbnail" src="/{{$post->image}}" id="image">
+                @endif
                 <p class="card-text">投稿者：{{ $post->user->name }}</p>
                 <p>投稿日時：{{ $post->created_at }}</p>
                 <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-primary">編集する</a>
